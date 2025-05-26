@@ -3,4 +3,4 @@ services:
     build: .
     container_name: catat-uangku-nginx
     ports:
-      - "80:80"
+      - "8080:80"

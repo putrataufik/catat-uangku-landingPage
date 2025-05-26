@@ -1,0 +1,6 @@
+services:
+  catat-uangku-web:
+    build: .
+    container_name: catat-uangku-nginx
+    ports:
+      - "80:80"

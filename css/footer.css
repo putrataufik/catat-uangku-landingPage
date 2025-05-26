@@ -1,0 +1,87 @@
+.custom-footer {
+  position: relative;
+  background-color: #000;
+  color: white;
+  padding: 3rem 2rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.custom-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../bg.png') repeat;
+  opacity: 0.1; /* Atur transparansi pattern di sini */
+  z-index: 0;
+}
+
+.footer-columns {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* Sisanya tetap sama */
+.footer-col h3, .footer-col h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.play-icon {
+  width: 24px;
+  margin-top: 0.75rem;
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+.language-select img{
+    width: 24px;
+    height: 24px;
+}
+
+.language-select select {
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}

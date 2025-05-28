@@ -1,20 +1,19 @@
 /* Hero Section */
 #hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 1.2rem 2rem;
 }
 
 .hero-shape {
   position: absolute;
-  top: -50px;
+  top: -100px;
   right: -50px;
   width: 400px;
-  z-index: 0;
 }
 
 .hero-shape img {
-  width: 100%;
+  width: 110%;
   height: auto;
   display: block;
 }

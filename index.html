@@ -27,6 +27,9 @@
       </nav>
     </header>
 
+
+    </div>
+
     <!-- Sections will go here -->
     <main>
       <section id="hero">
@@ -64,32 +67,39 @@
         <div class="about-wrapper">
           <div
             class="about-text"
-            data-aos="fade-up" data-aos-delay="100"
-              data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
           >
             <h2>About <span>Catat Uangku</span></h2>
             <p>
-              <strong>Catat Uangku</strong> adalah aplikasi pencatatan keuangan
-              harian yang dirancang untuk membantu siapa saja — mulai dari
-              pelajar hingga pemilik bisnis kecil — mencatat dan mengelola
-              keuangan mereka secara efisien dan sederhana.
+              <strong>Catat Uangku</strong> is a daily financial tracking
+              application designed to help everyone — from students to small
+              business owners — record and manage their finances efficiently and
+              simply.
             </p>
             <p>
-              Dibuat pada tahun 2025, aplikasi ini hadir untuk menjawab
-              kebutuhan akan solusi keuangan yang cepat, praktis, dan cerdas.
-              Dengan fitur <em>scan nota otomatis</em>,
-              <em>dashboard finansial yang lengkap</em>, dan
-              <em>pengingat pembayaran</em>, kamu bisa tetap tenang mengatur
-              keuangan dari mana saja.
+              Launched in 2025, this app was created to meet the need for a
+              fast, practical, and intelligent financial solution. With features
+              like
+              <em>automated receipt scanning</em>, a
+              <em>comprehensive financial dashboard</em>, and
+              <em>payment reminders</em>, you can confidently manage your
+              finances from anywhere.
             </p>
             <p>
-              Kami percaya bahwa keuangan yang rapi akan berdampak langsung pada
-              kualitas hidup. Catat Uangku hadir untuk mendampingi kamu dalam
-              setiap pengeluaran dan pemasukan.
+              We believe that well-organized finances directly impact quality of
+              life. Catat Uangku is here to accompany you in every expense and
+              income.
             </p>
           </div>
-          <div class="about-image" data-aos="fade-up" data-aos-delay="200"
-              data-aos-duration="1000">
+
+          <div
+            class="about-image"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <img src="assets/Manage-money-amico.png" alt="About illustration" />
           </div>
         </div>
@@ -98,7 +108,9 @@
       <!-- Features section -->
       <section id="features">
         <div class="features-container">
-          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Main Features</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            Main Features
+          </h2>
           <div class="feature-grid">
             <div
               class="feature-box"
@@ -240,9 +252,9 @@
           </ul>
           <div class="language-select">
             <img src="./assets/translation.png" alt="Lang" />
-            <select>
-              <option>English</option>
-              <option>Bahasa Indonesia</option>
+            <select id="languageSwitcher">
+              <option value="en">English</option>
+              <option value="id">Bahasa Indonesia</option>
             </select>
           </div>
         </div>
@@ -282,4 +294,6 @@
       }
     });
   </script>
+  <script src="translation.js"></script>
+  <script src="lang-switcher.js"></script>
 </html>

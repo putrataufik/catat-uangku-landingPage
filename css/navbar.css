@@ -1,5 +1,8 @@
 /* Navbar */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -36,7 +39,7 @@ header {
 }
 
 /* ✅ Responsive Mobile Navbar */
-@media (max-width: 595px) {
+@media (max-width: 767px) {
   .navbar {
     flex-direction: column;
     align-items: center;

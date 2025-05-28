@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/about.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="navbar-brand">Catat Uangku</div>
         <ul class="navbar-links">
+          <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#download">Download</a></li>
@@ -36,7 +40,11 @@
               employees, and small business owners.
             </p>
             <a href="#download" class="download-button">
-              <img src="./assets/playstore.png" alt="Play Store" class="button-icon" />
+              <img
+                src="./assets/playstore.png"
+                alt="Play Store"
+                class="button-icon"
+              />
               Download Here
             </a>
           </div>
@@ -52,15 +60,54 @@
           </div>
         </div>
       </section>
+      <section id="about">
+        <div class="about-wrapper">
+          <div
+            class="about-text"
+            data-aos="fade-up" data-aos-delay="100"
+              data-aos-duration="1000"
+          >
+            <h2>About <span>Catat Uangku</span></h2>
+            <p>
+              <strong>Catat Uangku</strong> adalah aplikasi pencatatan keuangan
+              harian yang dirancang untuk membantu siapa saja — mulai dari
+              pelajar hingga pemilik bisnis kecil — mencatat dan mengelola
+              keuangan mereka secara efisien dan sederhana.
+            </p>
+            <p>
+              Dibuat pada tahun 2025, aplikasi ini hadir untuk menjawab
+              kebutuhan akan solusi keuangan yang cepat, praktis, dan cerdas.
+              Dengan fitur <em>scan nota otomatis</em>,
+              <em>dashboard finansial yang lengkap</em>, dan
+              <em>pengingat pembayaran</em>, kamu bisa tetap tenang mengatur
+              keuangan dari mana saja.
+            </p>
+            <p>
+              Kami percaya bahwa keuangan yang rapi akan berdampak langsung pada
+              kualitas hidup. Catat Uangku hadir untuk mendampingi kamu dalam
+              setiap pengeluaran dan pemasukan.
+            </p>
+          </div>
+          <div class="about-image" data-aos="fade-up" data-aos-delay="200"
+              data-aos-duration="1000">
+            <img src="assets/Manage-money-amico.png" alt="About illustration" />
+          </div>
+        </div>
+      </section>
 
       <!-- Features section -->
       <section id="features">
         <div class="features-container">
-          <h2>Main Features</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Main Features</h2>
           <div class="feature-grid">
-            <div class="feature-box">
+            <div
+              class="feature-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <img
-                src="https://img.icons8.com/ios-filled/50/000000/receipt.png"
+                src="https://img.icons8.com/ios-filled/50/3366ff/receipt.png"
                 alt="Smart Receipt Scanner"
               />
               <h3>Smart Receipt Scanner</h3>
@@ -70,9 +117,14 @@
                 it into a saved transaction record.
               </p>
             </div>
-            <div class="feature-box">
+            <div
+              class="feature-box"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               <img
-                src="https://img.icons8.com/ios-filled/50/000000/combo-chart.png"
+                src="https://img.icons8.com/ios-filled/50/3366ff/combo-chart.png"
                 alt="Budgeting"
               />
               <h3>Budgeting</h3>
@@ -82,9 +134,14 @@
                 insights.
               </p>
             </div>
-            <div class="feature-box">
+            <div
+              class="feature-box"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               <img
-                src="https://img.icons8.com/ios-filled/50/000000/planner.png"
+                src="https://img.icons8.com/ios-filled/50/3366ff/planner.png"
                 alt="Planned Payment"
               />
               <h3>Planned Payment</h3>
@@ -94,9 +151,14 @@
                 important payment.
               </p>
             </div>
-            <div class="feature-box">
+            <div
+              class="feature-box"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+            >
               <img
-                src="https://img.icons8.com/ios-filled/50/000000/combo-chart--v2.png"
+                src="https://img.icons8.com/ios-filled/50/3366ff/combo-chart--v2.png"
                 alt="Financial Dashboard"
               />
               <h3>Financial Dashboard</h3>
@@ -114,9 +176,9 @@
 
       <section id="pricing">
         <div class="pricing-container">
-          <h2>Choose Your Plan</h2>
+          <h2 data-aos="fade-up">Choose Your Plan</h2>
           <div class="pricing-cards">
-            <div class="pricing-card">
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
               <h3>Free</h3>
               <p class="price">Rp0<span>/month</span></p>
               <ul>
@@ -126,7 +188,7 @@
               <a href="#" class="price-btn">Get Started</a>
             </div>
 
-            <div class="pricing-card">
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
               <h3>Premium</h3>
               <p class="price">Rp49.000<span>/month</span></p>
               <ul>
@@ -187,4 +249,37 @@
       </div>
     </footer>
   </body>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      startEvent: "DOMContentLoaded",
+      initClassName: "aos-init",
+      animatedClassName: "aos-animate",
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+
+      // Per-element settings:
+      offset: 120,
+      delay: 0,
+      duration: 500,
+      easing: "ease",
+      once: false, // agar animasi bisa berulang
+      mirror: true, // ⬅️ ini yang memungkinkan fade-out saat scroll keluar
+      anchorPlacement: "top-bottom",
+    });
+
+    document.addEventListener("aos:in", ({ detail }) => {
+      if (!detail.dataset.triggered) {
+        console.log("animate once and stop");
+        detail.dataset.triggered = "true";
+      } else {
+        // stop animation manually (optional)
+        detail.classList.remove("aos-animate");
+      }
+    });
+  </script>
 </html>
